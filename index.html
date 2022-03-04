@@ -68,12 +68,22 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 </div>
 	
 <div id="content" class="w3-container">
-	<p>Content goes here.</p>
+	<p>Are you looking to have some fun? Interact with the digital canvas to draw and make art!</p>
 		
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
-
+	
+<canvas width="300" height="225"></canvas>
+<!-- this code displays blank canvas to be 300*225 in dimensions -->
+	
+function draw_b() {
+  var b_canvas = document.getElementById("b");
+  var b_context = b_canvas.getContext("2d");
+  b_context.fillRect(50, 25, 150, 100);
+}
+<!-- function gives an item to be drawn onto to canvas; solid rectangle can be added -->
+	
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
 </footer>
