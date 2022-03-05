@@ -77,6 +77,14 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 <canvas id="myCanvas" width="400" height="300" style="border:5px dotted #000000;"></canvas>
 <!-- this code displays blank canvas to be 300*225 in dimensions; ID gives name to function -->
 	
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+ctx.stroke();
+</script>
+	
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
 </footer>
