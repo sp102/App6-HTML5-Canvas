@@ -98,6 +98,24 @@ ctx.fillText("Sarayu Parthasarathy", 10, 50);
 </script>
 <a href="fillRect" class="w3-ripple w3-black w3-hover-white w3-round-large w3-padding-large w3-large"> Draw Sarayu's name </a>
 	
+<p>Image to use:</p>
+<img id="scream" src="https://static.scientificamerican.com/sciam/cache/file/0C1CC66D-4C4C-4D31-959CF5FD37FBA528_source.jpg" alt="Manatees" width="220" height="277">
+
+<p>Canvas to fill:</p>
+<canvas id="myCanvas" width="250" height="300"
+style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML canvas tag.</canvas>
+
+<p><button onclick="myCanvas()">Try it</button></p>
+
+<script>
+function myCanvas() {
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  var img = document.getElementById("Manatees");
+  ctx.drawImage(img,10,10);
+}
+	
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
 </footer>
