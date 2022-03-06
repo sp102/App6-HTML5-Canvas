@@ -77,6 +77,11 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	
 <button onclick ="draw_c()">Write my name </button>
 	
+<button onclick ="draw_d()"> Insert picture of manatee </button>
+	
+<img id="manatee" src="https://www.rd.com/wp-content/uploads/2019/10/1517951480-scaled.jpg?resize=700,466" alt="manatee" width="177" height="113">
+<canvas id="myCanvas" width="177" height="113"></canvas>
+	
 <canvas id="myCanvas" width="400" height="300" style="border:5px dotted #000000;">
 <!-- this code displays blank canvas to be 400*300 in dimensions; ID gives name to function -->
 
@@ -91,10 +96,14 @@ function draw_c() {
 	var c_context = c_canvas.getContext ("2d");
 	c_context.fillText("Sarayu Parthasarathy", 10, 50);
 }
-// var c = document.getElementById("myCanvas");
-//var ctx = c.getContext("2d");
-//ctx.font = "30px Arial";
-//ctx.fillText("Sarayu Parthasarathy", 10, 50);	
+	
+window.onload = function draw_d() {
+  var d_canvas = document.getElementById("myCanvas");
+  var d_context = d_canvas.getContext("2d");
+  var d_manatee = document.getElementById("manatee");
+  d_context.drawImage(manatee, 20, 20);
+};
+	
 	</script>
 
 <footer class="w3-bottom w3-container w3-flat-carrot">
