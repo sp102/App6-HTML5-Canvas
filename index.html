@@ -79,15 +79,18 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 <!-- this code displays blank canvas to be 400*300 in dimensions; ID gives name to function -->
 	
 <script>
-function b(){
-	var b_canvas = document.getElementById("b");
+function myCanvas(){
+	var b_canvas = document.getElementById("myCanvas");
 b_canvas.width = b_canvas.width;
 	</script>
 	
 <script>	
-var b_canvas = document.getElementById("b");
-var b_context = b_canvas.getContext("2d");
-b_context.fillRect(50, 25, 150, 100);
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.rect(20, 20, 150, 100);
+ctx.fillRect(20,20,150,100);
+ctx.stroke();
 	</script>
 	
 <!-- function draw allows rectangle to be drawn on canvas; fillRect shows filled rectange with dimensions specified -->
