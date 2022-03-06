@@ -71,9 +71,6 @@ console.log("This file last modified " + docMod); // generates message in javaSc
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 	
-<img id="manatee" src="https://www.rd.com/wp-content/uploads/2019/10/1517951480-scaled.jpg?resize=700,466" alt="manatee" width="177" height="113">
-<canvas id="myCanvas" width="400" height="300"></canvas>
-	
 <div id="content" class="w3-container">
 	
 <button onclick ="draw_b()">Draw a rectangle </button>
@@ -94,6 +91,16 @@ function draw_c() {
 	var c_context = c_canvas.getContext ("2d");
 	c_context.fillText("Sarayu Parthasarathy", 10, 50);
 }
+	
+<img id="manatee" src="https://www.rd.com/wp-content/uploads/2019/10/1517951480-scaled.jpg?resize=700,466" alt="manatee" width="177" height="113">
+<canvas id="myCanvas" width="400" height="300"></canvas>
+window.onload = function draw_d() {
+  var canvas = document.getElementById("myCanvas");
+  var context = canvas.getContext("2d");
+  var manatee = document.getElementById("manatee");
+  context.drawImage(manatee, 0, 0);
+};
+</script>
 	
 	</script>
 
