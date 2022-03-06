@@ -75,12 +75,14 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 <!-- this code displays blank canvas to be 400*300 in dimensions; ID gives name to function -->
 
 <script>
-let btn = document.createElement("button")
-btn.innerHTML = "Draw a rectangle";
-btn.onclick = function (ctx.fillRect) {
-	alert("Button is clicked");
-};
-document.body.appendChild(btn);
+function c() {
+    document.getElementById("Draw a rectangle").style.display = "";
+}
+<button onclick="Draw a rectangle">Tests</button>
+
+<div id="Draw a rectangle" style="display:none">
+    tests here!
+</div>	
 	</script>
 	
 <script>	
