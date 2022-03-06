@@ -115,7 +115,11 @@ function myCanvas() {
   var img = document.getElementById("Manatees");
   ctx.drawImage(img,10,10);
 }
-</script>
+
+var canvas = document.getElementById("myCanvasID");
+var context = canvas.getContext('2d');
+context.clearRect(0, 0, canvas.width, canvas.height); 
+<script/>
 	
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
