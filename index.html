@@ -98,9 +98,10 @@ function draw_c() {
 }
 	
 window.onload = function draw_d() {
-  var d_canvas = document.getElementById("myCanvas");
-  var d_context = d_canvas.getContext("2d");
-  d_context.drawImage(manatee, 0, 0);
+  var canvas = document.getElementById("myCanvas");
+  var context = canvas.getContext("2d");
+var manatee = document.getElementById("manatee");
+  context.drawImage(manatee, 0, 0);
 };
 	
 	</script>
