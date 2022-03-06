@@ -75,7 +75,8 @@ console.log("This file last modified " + docMod); // generates message in javaSc
      
 <a let btn = document.createElement("button")
 btn.innerHTML = "Draw a rectangle";
-btn.onclick = function (b_canvas) {
+btn.onclick = function draw_b(); {
+	alert("Button is clicked");
 };
 document.body.appendChild(btn);</a>
 	
@@ -83,8 +84,10 @@ document.body.appendChild(btn);</a>
 <!-- this code displays blank canvas to be 400*300 in dimensions; ID gives name to function -->
 	
 <script>
-function var b_canvas = document.getElementById("myCanvas");
+function draw_b(){
+	var b_canvas = document.getElementById("myCanvas");
 b_canvas.width = b_canvas.width;
+}
 	</script>
 	
 <script>	
