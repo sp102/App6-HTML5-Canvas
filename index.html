@@ -74,8 +74,8 @@ console.log("This file last modified " + docMod); // generates message in javaSc
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 	
-<canvas id="myCanvas" width="400" height="300" style="border:5px dotted #000000;"></canvas>
-<!-- this code displays blank canvas to be 300*225 in dimensions; ID gives name to function -->
+<canvas id="myCanvas" width="400" height="300" style="border:5px dotted #000000;">
+<!-- this code displays blank canvas to be 400*300 in dimensions; ID gives name to function -->
 
 <script>
 var c = document.getElementById("myCanvas");
@@ -88,7 +88,6 @@ ctx.stroke();
 <!-- function draw allows rectangle to be drawn on canvas; fillRect shows filled rectange with dimensions specified -->
 <!-- fillRect makes rectangle filled; adding same dimensions fills the whole rectangle -->
 <!-- 20, 20, 150, 100 means 20 x, 20 y, 150 width, 100 height- can be adjusted -->
-<a href="#" class="w3-ripple w3-black w3-hover-white w3-round-large w3-padding-large w3-large"> Draw a rectangle </a>
 	
 <script>
 var c = document.getElementById("myCanvas");
@@ -96,14 +95,10 @@ var ctx = c.getContext("2d");
 ctx.font = "30px Selima Script";
 ctx.fillText("Sarayu Parthasarathy", 10, 50);
 </script>
-<a href="#" onclick="c" class="w3-ripple w3-black w3-hover-white w3-round-large w3-padding-large w3-large"> Draw Sarayu's name </a>
-	
-<p>Image to use:</p>
-<img id="scream" src="https://static.scientificamerican.com/sciam/cache/file/0C1CC66D-4C4C-4D31-959CF5FD37FBA528_source.jpg" alt="Manatees" width="220" height="220">
 
-<canvas id="myCanvas" width="400" height="300"
-style="border:5px dotted #000000;">
-</canvas>
+	
+<img id="Manatees" src="https://static.scientificamerican.com/sciam/cache/file/0C1CC66D-4C4C-4D31-959CF5FD37FBA528_source.jpg" alt="Manatees" width="220" height="200">
+
 
 <script>
 function myCanvas() {
@@ -113,10 +108,10 @@ function myCanvas() {
   ctx.drawImage(img,10,10);
 }
 
-var canvas = document.getElementById("myCanvasID");
+var canvas = document.getElementById("Manatees");
 var context = canvas.getContext('2d');
 context.clearRect(0, 0, canvas.width, canvas.height); 
-<script/>
+</script>
 	
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
