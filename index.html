@@ -98,15 +98,21 @@ ctx.fillText("Sarayu Parthasarathy", 10, 50);
 </script>
 	
 <script>
-let canvas = document.getElementById("myCanvas");
-let ctx = canvas.getContext("2d"); 
+<p>Image to use:</p>
+<img id="scream" width="220" height="277" src="img_the_scream.jpg" alt="The Scream">
 
-const drawImage = (https://s3-us-west-2.amazonaws.com/seacowsocial/site_uploads/files/000/000/001/original/screen-shot-2015-06-09-at-11-22-55-pm-1.png) => {
-    const image = new Image();
-    image.src = https://s3-us-west-2.amazonaws.com/seacowsocial/site_uploads/files/000/000/001/original/screen-shot-2015-06-09-at-11-22-55-pm-1.png;
-    image.onload = () => {
-       ctx.drawImage(image, 0, 0)
-    }
+<p>Canvas:</p>
+<canvas id="myCanvas" width="400" height="300" style="border:5px dotted #000000;">
+Your browser does not support the HTML5 canvas tag.
+</canvas>
+</script>
+	
+<script>
+window.onload = function() {
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  var img = document.getElementById("scream");
+  ctx.drawImage(img, 10, 10, 150, 180);
 }
 </script>
 	
