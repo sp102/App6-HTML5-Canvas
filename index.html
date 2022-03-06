@@ -76,18 +76,6 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	
 <canvas id="myCanvas" width="400" height="300" style="border:5px dotted #000000;">
 <!-- this code displays blank canvas to be 400*300 in dimensions; ID gives name to function -->
-
-<script>
-<a href="#" onclick="draw_b();return false">Click to draw on this canvas</a>
-	</script>
-	
-<script>
-function draw_b() {
-  var b_canvas = document.getElementById("b");
-  var b_context = b_canvas.getContext("2d");
-  b_context.fillRect(50, 25, 150, 100);
-}
-	</script>
 	
 <script>	
 var c = document.getElementById("myCanvas");
@@ -107,6 +95,13 @@ var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
 ctx.font = "30px Selima Script";
 ctx.fillText("Sarayu Parthasarathy", 10, 50);	
+	</script>
+	
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+var img = document.getElementById("scream");
+ctx.drawImage(img, 10, 10);
 	</script>
 	
 <footer class="w3-bottom w3-container w3-flat-carrot">
