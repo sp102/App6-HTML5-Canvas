@@ -97,28 +97,15 @@ ctx.font = "30px Selima Script";
 ctx.fillText("Sarayu Parthasarathy", 10, 50);	
 </script>
 	
-<img id="scream" width="220" height="277" src="img_the_scream.jpg" alt="The Scream">
-
-<canvas id="myCanvas" width="400" height="300" style="border:5px dotted #000000;">
-Your browser does not support the HTML5 canvas tag.
-</canvas>
-
+<img id="cat" src="images/cat.png" alt="sleeping cat" width="177" height="113">
+<canvas id="e" width="177" height="113"></canvas>
 <script>
 window.onload = function() {
-  var c = document.getElementById("myCanvas");
-  var ctx = c.getContext("2d");
-  var img = document.getElementById("scream");
-  ctx.drawImage(img, 10, 10, 150, 180);
-}
-</script>
-	
-<script>
-window.onload = function() {
-  var c = document.getElementById("myCanvas");
-  var ctx = c.getContext("2d");
-  var img = document.getElementById("scream");
-  ctx.drawImage(img, 10, 10, 150, 180);
-}
+  var canvas = document.getElementById("e");
+  var context = canvas.getContext("2d");
+  var cat = document.getElementById("cat");
+  context.drawImage(cat, 0, 0);
+};
 </script>
 	
 <footer class="w3-bottom w3-container w3-flat-carrot">
