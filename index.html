@@ -73,14 +73,17 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	
 <div id="content" class="w3-container">
      
-<a href="#" class="w3-ripple w3-black w3-hover-white w3-round-large w3-padding-large w3-large"> Draw a rectangle </a>
+<a let btn = document.createElement("button")
+btn.innerHTML = "Draw a rectangle";
+btn.onclick = function (b_canvas) {
+};
+document.body.appendChild(btn);</a>
 	
 <canvas id="myCanvas" width="400" height="300" style="border:5px dotted #000000;">
 <!-- this code displays blank canvas to be 400*300 in dimensions; ID gives name to function -->
 	
 <script>
-function myCanvas(){
-	var b_canvas = document.getElementById("myCanvas");
+function var b_canvas = document.getElementById("myCanvas");
 b_canvas.width = b_canvas.width;
 	</script>
 	
