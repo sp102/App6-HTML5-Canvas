@@ -81,10 +81,11 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 <!-- p brackets go around words that want to be displayed as title or notes -->
 	
 <canvas id="myCanvas" width="400" height="300" style="border:5px dotted #000000;">
+	</canvas>
 <!-- this code displays blank canvas to be 400*300 in dimensions; ID gives name to function -->
 <!-- border specified; dotted rather solid -->
 	
-<button onclick ="draw_b()">Draw a rectangle </button>
+<p><button onclick ="draw_b()">Draw a rectangle </button></p>
 <!-- button brackets indicate that it is a button -->
 <!-- onclick commands button to do something after button is clicked -->
 <!-- onclick equals function that button wants to trigger; draw_b is function (indicated in javascript portion) that makes rectangle -->
@@ -92,15 +93,15 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 <!-- ""() always used with function for button; nothing put in parentheses -->
 <!-- >carrot goes before words that appear on button, followed by closing button -->
 	
-<button onclick ="draw_c()">Write my name </button>
+<p><button onclick ="draw_c()">Write my name </button></p>
 <!-- button writes name onto canvas -->
 <!-- function button corresponds to is draw_c; expressed in javascript portion -->
 	
-<button onclick ="draw_d()">Reset canvas </button>
+<p><button onclick ="draw_d()">Reset canvas </button></p>
 <!-- button resets canvas and gets rids of element -->
 <!-- function button corresponds to is draw_d; expressed in javascript portion -->
 	
-<button onclick ="draw_e()">Add a picture</button>
+<p><button onclick ="draw_e()">Add a picture</button></p>
 <!-- button adds picture of choice onto canvas -->
 <!-- function button corresponds to is draw_e; expressed in javascript portion -->
 	
