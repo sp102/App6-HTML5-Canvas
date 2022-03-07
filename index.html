@@ -77,7 +77,9 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	
 <button onclick ="draw_c()">Write my name </button>
 	
-<button onclick ="draw_d()">Add a picture</button>
+<button onclick ="draw_d()">Reset canvas </button>
+	
+<button onclick ="draw_e()">Add a picture</button>
 	
 <canvas id="myCanvas" width="400" height="300" style="border:5px dotted #000000;">
 <!-- this code displays blank canvas to be 400*300 in dimensions; ID gives name to function -->
@@ -96,11 +98,15 @@ function draw_c() {
 	var c_context = c_canvas.getContext ("2d");
 	c_context.fillText("Sarayu Parthasarathy", 10, 50);
 }
-window.onload = function draw_d() {
+function draw_d() {	
 	var d_canvas = document.getElementById("myCanvas");
-	var d_context = d_canvas.getContext("2d");
-	var d_manatee = document.getElementById("manatee");
-	d_context.drawImage(manatee, 100, 150);
+	d_canvas.width = d_canvas.width;
+	
+window.onload = function draw_e() {
+	var e_canvas = document.getElementById("myCanvas");
+	var e_context = e_canvas.getContext("2d");
+	var e_manatee = document.getElementById("manatee");
+	e_context.drawImage(manatee, 100, 150);
 };
 </script>
 
