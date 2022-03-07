@@ -32,6 +32,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
       <link rel="stylesheet" href="w3.css">
       <link rel="stylesheet" href="w3-colors-flat.css">
    </head> 
+
+<!-- content is sectioned off by <> and </> for title, script, etc. -->
+<!-- sets up HTML tag to show file type -->
+<!-- title brackets separate out title; title is Hello World -->
+<!-- href links to another page and/or IDs other parts of pg -->
 	
 <script>
 var docMod = document.lastModified; // loads last modified time stamp into docMod variable
@@ -51,7 +56,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
     left: -100vw;
     overflow-y: auto;
     z-index: 0;
-    background-color: hsl(0,0%,100%);
+    background-color: hsl(40,100%,50%);
 }
   .page:target {
     left: 0vw;
@@ -71,43 +76,84 @@ console.log("This file last modified " + docMod); // generates message in javaSc
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 	
+<!-- title gives context to page and any warnings needed; functions as header -->
+<!-- p brackets go around words that want to be displayed as title or notes -->
+	
 <div id="content" class="w3-container">
+<!-- this section is html; does not have script brackets -->
+<!-- "<" bracket goes before functions in code (buttons, canvas, etc) -->
 	
 <button onclick ="draw_b()">Draw a rectangle </button>
+<!-- button brackets indicate that it is a button -->
+<!-- onclick commands button to do something after button is clicked -->
+<!-- onclick equals function that button wants to trigger; draw_b is function (indicated in javascript portion) that makes rectangle -->
+<!-- when button is linked to function, button makes function/object appear AFTER clicked; invisible before -->
+<!-- ""() always used with function for button; nothing put in parentheses -->
+<!-- >carrot goes before words that appear on button, followed by closing button -->
 	
 <button onclick ="draw_c()">Write my name </button>
+<!-- button writes name onto canvas -->
+<!-- function button corresponds to is draw_c; expressed in javascript portion -->
 	
 <button onclick ="draw_d()">Reset canvas </button>
+<!-- button resets canvas and gets rids of element -->
+<!-- function button corresponds to is draw_d; expressed in javascript portion -->
 	
 <button onclick ="draw_e()">Add a picture</button>
+<!-- button adds picture of choice onto canvas -->
+<!-- function button corresponds to is draw_e; expressed in javascript portion -->
 	
 <canvas id="myCanvas" width="400" height="300" style="border:5px dotted #000000;">
 <!-- this code displays blank canvas to be 400*300 in dimensions; ID gives name to function -->
+<!-- border specified; dotted rather solid -->
 	
 <img id="manatee" src="https://www.rd.com/wp-content/uploads/2019/10/1517951480-scaled.jpg?resize=200,100" alt="manatee" width="10" height="5">
 <canvas id="myCanvas" width="10" height="5"></canvas>
-
+<!-- img id defines image so that it can be retrieved- shorter name -->
+<!--scr is where link to image goes (image address used and numbers after-200,100-define size of picture -->
+<!--alt gives a name that describes image well for those who are blind to be able to have image read aloud -->
+<!-- canvas id below allows pic to be pasted onto canvas -->
+	
 <script>
 function draw_b() {
 	var b_canvas = document.getElementById("myCanvas");
 	var b_context = b_canvas.getContext("2d");
 	b_context.fillRect(120, 25, 150, 100);
 }
+// <script> brackets indicate code is now in javascript 
+// function line defines function; anything put after function word is what that whole section is called as a function
+// getElementById retrieves element to draw on (canvas) after var- canvas
+// myCanvas used as element because above, canvas id was defined as myCanvas
+// fillRect displays filled rectangle with dimensions following (based on xy plane)
+// 2d in brackets is specified because canvas is 2d, not 3d
+	
 function draw_c() {
 	var c_canvas = document.getElementById("myCanvas");
 	var c_context = c_canvas.getContext ("2d");
 	c_context.fillText("Sarayu Parthasarathy", 10, 50);
 }
+// both curly brackets after function name and at end of function important for function to work- WILL NOT WORK IF A BRACKET IS MISSING
+// fillText allows text to be displayed on place desired
+// "Sarayu Parthasarathy" in parentheses spells out what is written out as text
+// numbers after name indicate position (x,y) of name 
+	
 function draw_d() {	
 	var d_canvas = document.getElementById("myCanvas");
 	d_canvas.width = d_canvas.width;
 }
+// canvas width equalling canvas width calls up canvas again so that screen looks blank
+// sets width and properties to default values
+	
 window.onload = function draw_e() {
 	var e_canvas = document.getElementById("myCanvas");
 	var e_context = e_canvas.getContext("2d");
 	var e_manatee = document.getElementById("manatee");
 	e_context.drawImage(manatee, 100, 150);
 };
+// function calls up picture to be able to be pasted onto canvas
+// two getElementById functions; one for canvas and one for the picture that can get posted on canvas
+// numbers after manatee in brackets dictate position of picture on canvas
+	
 </script>
 
 <footer class="w3-bottom w3-container w3-flat-carrot">
